@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leftover Food Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Available Leftover Food</h1>
+
+            <table class="table is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>Shopkeeper Name</th>
+                        <th>Phone Number</th>
+                        <th>Food Description</th>
+                        <th>Quantity</th>
+                        <th>Address</th>
+                        <th>Location</th>
+                        <th>Take Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Static example of food entries -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>+1 234 567 890</td>
+                        <td>Leftover sandwiches</td>
+                        <td>10 sandwiches</td>
+                        <td>123 Main Street, Cityville</td>
+                        <td>Cityville Central Market</td>
+                        <td><button class="button is-success" onclick="confirmPurchase()">Take Food</button></td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>+1 987 654 321</td>
+                        <td>Fresh fruit</td>
+                        <td>5 baskets</td>
+                        <td>456 Elm Street, Townsville</td>
+                        <td>Townsville Farmers Market</td>
+                        <td><button class="button is-success" onclick="confirmPurchase()">Take Food</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        function confirmPurchase() {
+            let confirmAction = confirm("Do you want to take this food?");
+            if (confirmAction) {
+                alert("Thank you! You've successfully taken the food.");
+                // In a real application, code here would update the database or remove the entry.
+            } else {
+                alert("No worries! Feel free to browse more.");
+            }
+        }
+    </script>
+</body>
+</html>

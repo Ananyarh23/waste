@@ -1,0 +1,116 @@
+/* General page settings */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Section container */
+.section {
+    padding: 3rem;
+    background-color: #f0f4f8;
+}
+
+/* Container to center and style content */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Title styles */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* Subtitle styles */
+.subtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Button styles */
+.buttons {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button.is-primary {
+    background-color: #3273dc;
+    color: white;
+}
+
+.button.is-primary:hover {
+    background-color: #275aa8;
+}
+
+.button.is-success {
+    background-color: #23d160;
+    color: white;
+}
+
+.button.is-success:hover {
+    background-color: #1aa84b;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.table th {
+    background-color: #3273dc;
+    color: white;
+}
+
+.table td {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover td {
+    background-color: #f0f0f0;
+}
+
+/* Responsive form and table */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .input, .textarea, .button {
+        font-size: 0.9rem;
+    }
+}
+
+
